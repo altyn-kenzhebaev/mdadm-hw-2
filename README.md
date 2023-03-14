@@ -147,8 +147,8 @@ mount --bind /sys /mnt/rootfs/sys/
 mount -t proc /proc /mnt/rootfs/proc/
 chroot /mnt/rootfs/
 ```
-Редактируем fstab, подставив значения `blkid -o value -s UUID /dev/vg01/root`
-Требуется изменение настройках файла GRUB, должен иметь следующий вид:
+Редактируем /etc/fstab, подставив значения `blkid -o value -s UUID /dev/vg01/root`
+Требуется изменение настройках файла GRUB /etc/default/grub, должен иметь следующий вид:
 ```
 GRUB_CMDLINE_LINUX="no_timer_check console=tty0 console=tty net.ifnames=0 biosdevname=0 elevator=noop crashkernel=auto rd.auto rd.auto=1"
 GRUB_PRELOAD_MODULES="mdraid1x"
