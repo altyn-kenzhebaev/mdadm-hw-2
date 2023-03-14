@@ -153,7 +153,7 @@ chroot /mnt/rootfs/
 GRUB_CMDLINE_LINUX="no_timer_check console=tty0 console=tty net.ifnames=0 biosdevname=0 elevator=noop crashkernel=auto rd.auto rd.auto=1"
 GRUB_PRELOAD_MODULES="mdraid1x"
 ```
-Монтируем /boot, генерируем ядро с опциями предзагрузки mdraid:
+Монтируем /boot, генерируем ядро с опциями предзагрузки mdraid, генерируем меню GRUB:
 ```
 mount /boot
 dracut -v --mdadmconf --fstab --add="mdraid" --filesystems "xfs ext4 ext3" --add-drivers="raid1" --force
