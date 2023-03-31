@@ -1,7 +1,7 @@
 ## Задание со *, собрать Vagrantfile, который сразу собирает систему с подключенным рейдом и смонтированными разделами.
 ### Vagrant
 Для выполнения этого действия требуется установить приложением git:
-`git clone https://github.com/altyn-kenzhebaev/dmadm-hw-2.git`
+`git clone https://github.com/altyn-kenzhebaev/mdadm-hw-2.git`
 В текущей директории появится папка с именем репозитория. В данном случае hw-1. Ознакомимся с содержимым:
 ```
 cd mdadm-hw-2
